@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  theme: MyString
+  duration: 1
+  organizer: MyString
+
+two:
+  theme: MyString
+  duration: 1
+  organizer: MyString
