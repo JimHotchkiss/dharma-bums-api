@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+meditations = Meditation.create([{theme: 'Relaxtion', duration: 6000, organizer: 'Jane'}, {theme: 'Stress', duration: 10000, organizer: 'Larry'}])
