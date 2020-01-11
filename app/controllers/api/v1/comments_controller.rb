@@ -7,7 +7,8 @@ module Api::V1
 
     def show 
       @comment = Comment.find(params[:id])
-      render json: { status: 'SUCCESS', message: 'loaded comment', data: @comment }
+      render json: @comment.to_json(only: [:content, :id],
+      include: [comments: { only: [:content]}])
     end 
 
     def create 
