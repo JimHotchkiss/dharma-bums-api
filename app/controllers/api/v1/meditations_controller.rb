@@ -7,10 +7,8 @@ module Api::V1
 
     def show 
       @meditation = Meditation.find(params[:id])
-      render json: @meditation.to_json(only: [:theme, :duration, :organizer, :id],
-      include: [comments: { only: [:content]}])
+      render json: { status: 'SUCCESS', message: 'loaded posts', data: @meditation }
     end 
-
     def create 
       @meditation = Meditation.new(meditation_params)
       if @meditation.save
